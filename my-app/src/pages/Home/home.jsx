@@ -32,7 +32,7 @@ const slides = [
 
 const Home = () => {
   return (
-    <section className="w-full min-h-screen bg-linear-to-r from-slate-950 via-blue-900 to-blue-700">
+    <section className="w-full min-h-screen bg-linear-to-r from-slate-950 via-blue-900 to-blue-700 pt-12">
 
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
@@ -132,7 +132,7 @@ const Home = () => {
         }
 
         .heroSwiper .swiper-pagination{
-          bottom:25px;
+          bottom:25px ;
         }
 
         .heroSwiper .swiper-pagination-bullet{

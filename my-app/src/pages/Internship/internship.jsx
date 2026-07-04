@@ -1,87 +1,3 @@
-// import seo from "../../assets/images/seo.png";
-// import { FaRegDotCircle } from "react-icons/fa";
-
-// const Internship = () => {
-//   return (
-//     <section className="w-full py-20 bg-linear-to-r from-slate-900 via-blue-900 to-blue-700 mt-10">
-//       <div className="max-w-7xl mx-auto px-8 flex">
-//         {/* LEFT */}
-//         <div className="w-1/2">
-//           {/* Top Heading */}
-//           <div className="flex items-center gap-4">
-//             <h4 className="text-2xl font-semibold text-white">Internship</h4>
-//             <div className="w-16 h-[0.5] bg-red-600"></div>
-//           </div>
-
-//           {/* Main Heading */}
-//           <h1 className="text-3xl font-semibold text-white mt-6 leading-tight">
-//             Internship Training Program - 2020
-//           </h1>
-
-//           <p className=" mt-4 text-lg text-white">
-//             Lorem ipsum dolor sit amet consectetur adipisicing elit.
-//           </p>
-
-//           {/* Who Can Apply */}
-//           <div className="flex items-center gap-4 mt-10">
-//             <h2 className="text-3xl font-semibold text-white">
-//               Who Can Apply?
-//             </h2>
-//             {/* <div className="w-14 h-[0.5] bg-red-600"></div> */}
-//           </div>
-
-//           {/* Bullet Points */}
-//           <div className="mt-8 space-y-5">
-//             {[
-//               "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-//               "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-//               "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-//               "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-//             ].map((item, index) => (
-//               <div key={index} className="flex items-center gap-3">
-//                 <FaRegDotCircle className="text-gray-600 text-lg" />
-//                 <p className="text-gray-600 text-lg">{item}</p>
-//               </div>
-//             ))}
-//           </div>
-
-//           {/* Form */}
-//           <div className="flex items-center gap-5 mt-12">
-//             <div className="flex border border-gray-300 bg-white">
-//               <select className="w-50 px-2 py-3 outline-none border-r text-slate-900 border-gray-500">
-//                 <option className="">Courses We Offer</option>
-//                 <option>Web Development</option>
-//                 <option>UI/UX Design</option>
-//               </select>
-
-//               <input
-//                 type="text"
-//                 placeholder="Phone"
-//                 className="w-56 px-5 py-4 text-slate-900 placeholder:text-slate-700 outline-none "
-//               />
-//             </div>
-
-//             <button className="px-4 py-3 bg-linear-to-r from-purple-600 to-blue-700 text-white font-semibold rounded">
-//               Send Now
-//             </button>
-//           </div>
-//         </div>
-
-//         {/* RIGHT */}
-//         {/* RIGHT */}
-//         <div className="w-1/2 flex justify-end items-center">
-//           <img
-//             src={seo}
-//             alt="seo"
-//             className="w-full max-w-[162] h-auto object-contain"
-//           />
-//         </div>
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default Internship;
 import seo from "../../assets/images/seo.png";
 import { FaRegDotCircle } from "react-icons/fa";
 
@@ -94,7 +10,7 @@ const Internship = () => {
   ];
 
   return (
-    <section className="w-full py-16 lg:py-20 bg-gradient-to-r from-slate-900 via-blue-900 to-blue-700 mt-10">
+    <section className="w-full py-5 lg:py-20 bg-gradient-to-r from-slate-900 via-blue-900 to-blue-700 mt-10">
       <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
 
         <div className="flex flex-col-reverse lg:flex-row items-center gap-12">

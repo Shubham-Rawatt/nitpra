@@ -290,43 +290,9 @@ const OurClient = () => {
             </p>
 
             {/* Stats */}
-{/* 
-            <div className="grid grid-cols-2 gap-8 mt-10">
-              <div className="bg-white shadow-lg rounded-xl p-6 hover:shadow-xl transition">
-                <FaBullhorn className="text-4xl text-blue-700 mb-4" />
 
-                <h3 className="text-3xl font-bold text-blue-800">330+</h3>
 
-                <p className="text-gray-600 mt-2">Professional Courses</p>
-              </div>
-
-              <div className="bg-white shadow-lg rounded-xl p-6 hover:shadow-xl transition">
-                <FaBullhorn className="text-4xl text-blue-700 mb-4" />
-
-                <h3 className="text-3xl font-bold text-blue-800">15+</h3>
-
-                <p className="text-gray-600 mt-2">Team Advisors</p>
-              </div>
-
-              <div className="bg-white shadow-lg rounded-xl p-6 hover:shadow-xl transition">
-                <FaBullhorn className="text-4xl text-blue-700 mb-4" />
-
-                <h3 className="text-3xl font-bold text-blue-800">35+</h3>
-
-                <p className="text-gray-600 mt-2">Educators</p>
-              </div>
-
-              <div className="bg-white shadow-lg rounded-xl p-6 hover:shadow-xl transition">
-                <FaBullhorn className="text-4xl text-blue-700 mb-4" />
-
-                <h3 className="text-3xl font-bold text-blue-800">15+</h3>
-
-                <p className="text-gray-600 mt-2">Glorious Years</p>
-              </div>
-            </div> */}
-            {/* Stats */}
-
-<div className="grid grid-cols-2 gap-5 mt-10">
+ <div className="grid grid-cols-2 gap-5 mt-10">
 
   <div className="flex items-center gap-4 bg-white rounded-xl shadow-md px-5 py-4 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
     <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center">
@@ -372,7 +338,8 @@ const OurClient = () => {
     </div>
   </div>
 
-</div>
+</div> 
+
           </div>
 
           {/* Right Image */}

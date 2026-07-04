@@ -8,12 +8,14 @@ import OurClient from "./pages/OurClient/client"
 import AboutCompany from "./pages/AboutCompany/aboutcompany"
 import Course from "./pages/Courses/course"
 import Footer from "./components/Footer/footer"
+import Navbar from "./components/Navbar/navbar"
 function App() {
 
   return (
     // <Routes>
-    <div className="text-white bg-[#0F172A]">
-  <Header />
+    <div className="text-white bg-[#0F172A] shadow:md">
+      <Header />
+  <Navbar />
   <Home />
   <OurVision />
   <Service />
