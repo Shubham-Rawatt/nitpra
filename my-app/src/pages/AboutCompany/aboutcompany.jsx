@@ -160,7 +160,6 @@ const accordionData = [
 ];
 
 const AboutCompany = () => {
-  // only one panel open at a time — index 0 open by default
   const [expanded, setExpanded] = React.useState(0);
 
   // simple fade-in on mount, no scroll observer needed

@@ -404,7 +404,7 @@ const OurClient = () => {
 
       {/* Second Section */}
       <div className="max-w-7xl mx-auto mt-10 px-5 sm:px-8 lg:px-10">
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
+        <div className="flex flex-col lg:flex-row items-center justify-between">
           {/* Left Content */}
           <div
             ref={leftRef}
@@ -416,7 +416,7 @@ const OurClient = () => {
               Why Choose Us
             </p>
 
-            <h2 className="text-3xl sm:text-4xl font-bold mt-3 leading-tight text-slate-900">
+            <h2 className="text-3xl sm:text-4xl font-bold mt-3 leading-tight text-gray-600">
               Build Your Career With The Best Learning Experience
             </h2>
 

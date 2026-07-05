@@ -99,7 +99,8 @@
 
 // export default Internship;
 
-import seo from "../../assets/images/seo.png";
+// import seo from "../../assets/images/seo.png";
+import img2 from "../../assets/images/seo-1.png";
 import { FaRegDotCircle } from "react-icons/fa";
 
 const Internship = () => {
@@ -180,11 +181,11 @@ const Internship = () => {
           </div>
 
           {/* RIGHT */}
-          <div className="w-full lg:w-1/2 flex justify-center lg:justify-end">
+          <div className="hidden lg:flex lg:w-1/2 justify-center lg:justify-end">
             <img
-              src={seo}
+              src={img2}
               alt="seo"
-              className="w-[85%] sm:w-[65%] lg:w-[110%] lg:-mr-10 max-w-lg lg:max-w-none object-contain"
+              className="w-[60%] sm:w-[65%] lg:w-[110%] lg:-mr-10 max-w-lg lg:max-w-none object-contain"
             />
           </div>
 
