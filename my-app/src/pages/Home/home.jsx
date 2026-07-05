@@ -294,8 +294,8 @@ const Home = () => {
           return (
             <SwiperSlide key={index}>
 
-              <div className="relative max-w-7xl mx-auto min-h-[100vh] flex items-center px-5 sm:px-8 lg:px-10">
-
+              {/* <div className="relative max-w-7xl mx-auto min-h-[100vh] flex items-center px-5 sm:px-8 lg:px-10"> */}
+              <div className="relative max-w-7xl mx-auto min-h-[100vh] flex items-center px-5 sm:px-8 lg:px-10 pt-25 pb-16 lg:pt-32">
                 <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-16 w-full">
 
                   {/* LEFT CONTENT */}
@@ -340,10 +340,10 @@ const Home = () => {
                   <div className="hidden lg:flex justify-center relative">
 
                     {/* Glow */}
-                    <div className="absolute w-[420px] h-[420px] bg-blue-500/20 rounded-full blur-[120px]"></div>
+                    <div className="absolute w-[105] h-[105] bg-blue-500/20 rounded-full blur-[120px]"></div>
 
                     {/* Decorative rotating ring */}
-                    <div className="absolute w-[380px] h-[380px] border border-dashed border-orange-400/25 rounded-full animate-spin-slow"></div>
+                    <div className="absolute w-[95] h-[95] border border-dashed border-orange-400/25 rounded-full animate-spin-slow"></div>
 
                     {/* Main Image */}
                     <img
