@@ -53,7 +53,7 @@ const serviceCard = [
 
 const ServiceCard = ({ service }) => {
   return (
-    <div className="group relative w-full sm:w-[45%] lg:w-[30%] xl:w-[26%] p-7 bg-white rounded-2xl border border-slate-200 shadow-md shadow-slate-200/60 transition-all duration-500 ease-out hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-slate-300/70 cursor-pointer">
+    <div className="group relative w-full sm:w-[45%] lg:w-[30%] xl:w-[26%] p-7 bg-white rounded-2xl border-2 border-slate-300 shadow-lg shadow-slate-300/50 transition-all duration-500 ease-out hover:-translate-y-1.5 hover:border-orange-400 hover:shadow-2xl hover:shadow-orange-200/60 cursor-pointer">
       <span className="absolute top-0 left-7 right-7 h-[0.75] rounded-full bg-linear-to-r from-orange-500 to-orange-300 scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-400"></span>
 
       <div className="w-14 h-14 rounded-xl bg-orange-50 text-orange-500 flex items-center justify-center text-2xl group-hover:bg-orange-500 group-hover:text-white transition-colors duration-300">

@@ -5,7 +5,7 @@ import React from "react";
 const Header = () => {
   return (
     <header className="hidden md:block w-full bg-white border-b border-slate-200 shadow-sm">
-      <div className="max-w-7xl mx-auto px-5 lg:px-8 py-2">
+      <div className="max-w-7xl mx-auto px-5 lg:px-8">
         <div className="flex items-center justify-between">
 
           {/* Left Side */}
