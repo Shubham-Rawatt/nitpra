@@ -1,27 +1,36 @@
+
 // import React, { useState, useEffect } from "react";
-// import { NavLink } from "react-router-dom";
+// import { NavLink, useLocation } from "react-router-dom";
 // import logo from "../../assets/images/logo.png";
 // import { HiMenu, HiX } from "react-icons/hi";
 
 // const navItems = [
 //   { name: "Home", path: "/" },
 //   { name: "About", path: "/about" },
-//   { name: "Contact Us", path: "/contact" },
 //   { name: "Services", path: "/service" },
+//   { name: "Contact Us", path: "/contact" },
 // ];
 
 // const Navbar = () => {
 //   const [open, setOpen] = useState(false);
 //   const [scrolled, setScrolled] = useState(false);
+//   const location = useLocation();
 
+//   // Normal scroll ke time Navbar ki state update karo
 //   useEffect(() => {
 //     const handleScroll = () => {
 //       setScrolled(window.scrollY > 80);
 //     };
-
 //     window.addEventListener("scroll", handleScroll);
 //     return () => window.removeEventListener("scroll", handleScroll);
 //   }, []);
+
+//   // 👇 Route change hote hi page top pe le jao + Navbar ko "scrolled/top" state mein daalo
+//   useEffect(() => {
+//     window.scrollTo(0, 0);
+//     setScrolled(true);
+//     setOpen(false);
+//   }, [location.pathname]);
 
 //   return (
 //     <nav
@@ -108,9 +117,9 @@
 //       </div>
 //     </nav>
 //   );
-// };
+//  };
 
-// export default Navbar;
+//  export default Navbar;
 
 import React, { useState, useEffect } from "react";
 import { NavLink, useLocation } from "react-router-dom";
@@ -120,41 +129,24 @@ import { HiMenu, HiX } from "react-icons/hi";
 const navItems = [
   { name: "Home", path: "/" },
   { name: "About", path: "/about" },
-  { name: "Contact Us", path: "/contact" },
   { name: "Services", path: "/service" },
+  { name: "Contact Us", path: "/contact" },
 ];
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
 
-  // Normal scroll ke time Navbar ki state update karo
   useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 80);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  // 👇 Route change hote hi page top pe le jao + Navbar ko "scrolled/top" state mein daalo
-  useEffect(() => {
-    window.scrollTo(0, 0);
-    setScrolled(true);
+    const headerEl = document.querySelector("header");
+    const headerHeight = headerEl ? headerEl.offsetHeight : 0;
+    window.scrollTo(0, headerHeight + 10);
     setOpen(false);
   }, [location.pathname]);
 
   return (
-    <nav
-      className={`fixed left-0 w-full z-50 transition-all duration-500 ${
-        scrolled
-          ? "top-0 bg-slate-900/95 backdrop-blur-md shadow-2xl border-b border-slate-700"
-          : "top-0 md:top-10 bg-transparent"
-      }`}
-    >
+    <nav className="w-full bg-slate-900/95 backdrop-blur-md shadow-2xl border-b border-slate-700">
       <div className="max-w-7xl mx-auto px-5 lg:px-8 py-2 md:py-3 flex items-center justify-between">
-        {/* Logo */}
         <NavLink to="/">
           <img
             src={logo}
@@ -163,7 +155,6 @@ const Navbar = () => {
           />
         </NavLink>
 
-        {/* Desktop Menu */}
         <ul className="hidden md:flex items-center gap-10 lg:gap-12 font-medium tracking-wide">
           {navItems.map((item) => (
             <li
@@ -190,7 +181,6 @@ const Navbar = () => {
           </li>
         </ul>
 
-        {/* Mobile Menu Button */}
         <button
           onClick={() => setOpen(!open)}
           className="md:hidden text-white text-4xl transition-transform duration-300 hover:scale-110"
@@ -199,7 +189,6 @@ const Navbar = () => {
         </button>
       </div>
 
-      {/* Mobile Menu */}
       <div
         className={`md:hidden bg-slate-900/95 backdrop-blur-md overflow-hidden transition-all duration-300 ${
           open ? "max-h-80 py-5" : "max-h-0"
