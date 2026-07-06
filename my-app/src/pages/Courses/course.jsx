@@ -109,7 +109,7 @@
 
 // export default Course;
 
-import Internship from "../Internship/internship";
+// import Internship from "../Internship/internship";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
 
@@ -218,7 +218,7 @@ const Course = () => {
         </Swiper>
       </div>
 
-      <Internship />
+      {/* <Internship /> */}
 
       <style>{`
         .courseSwiper .swiper-pagination-bullet {
